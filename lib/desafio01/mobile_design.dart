@@ -60,31 +60,34 @@ class MobileDesign extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          Container(
-            alignment: Alignment.center,
-            height: 60,
-            width: constraints.maxWidth,
-            decoration: const BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.all(Radius.circular(6)),
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.network(
-                  'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png',
-                  height: 20,
-                  width: 20,
-                ),
-                const SizedBox(width: 10),
-                const Text(
-                  'Sign Up with Google',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w500,
-                    fontSize: 17,
+          InkWell(
+            onTap: () {},
+            child: Container(
+              alignment: Alignment.center,
+              height: 60,
+              width: constraints.maxWidth,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.all(Radius.circular(6)),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.network(
+                    'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png',
+                    height: 20,
+                    width: 20,
                   ),
-                ),
-              ],
+                  const SizedBox(width: 10),
+                  const Text(
+                    'Sign Up with Google',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 17,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
           const SizedBox(height: 20),
