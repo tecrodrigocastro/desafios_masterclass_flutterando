@@ -32,7 +32,7 @@ class _CustomLogoState extends State<CustomLogo> {
         alignment: Alignment.center,
         height: 120,
         width: 120,
-        color: Colors.black,
+        color: Colors.transparent,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

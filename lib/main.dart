@@ -1,4 +1,5 @@
 import 'package:desafios_masterclass/desafio01/desafio01.dart';
+import 'package:desafios_masterclass/desafio03/desafio03.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Desafio01(),
+      home: const Desafio03(),
     );
   }
 }
