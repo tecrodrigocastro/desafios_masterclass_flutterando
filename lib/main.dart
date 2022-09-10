@@ -1,5 +1,5 @@
 import 'package:desafios_masterclass/desafio01/desafio01.dart';
-import 'package:desafios_masterclass/desafio03/desafio03.dart';
+import 'package:desafios_masterclass/desafio03/desafio03_animacaoimplicita.dart';
 import 'package:desafios_masterclass/desafio04/desafio04.dart';
 import 'package:flutter/material.dart';
 

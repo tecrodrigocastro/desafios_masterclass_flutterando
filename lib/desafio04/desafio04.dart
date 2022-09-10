@@ -1,6 +1,5 @@
+import 'package:desafios_masterclass/desafio04/custom_expanded_tile.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class Desafio04 extends StatefulWidget {
   const Desafio04({Key? key}) : super(key: key);
@@ -10,10 +9,26 @@ class Desafio04 extends StatefulWidget {
 }
 
 class _Desafio04State extends State<Desafio04> {
+  bool _isExpanded = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Desafio 04')),
+      appBar: AppBar(
+        title: const Text('Desafio 04'),
+      ),
+      body: Padding(
+          padding: const EdgeInsets.all(10),
+          child: ListView.separated(
+            itemCount: 20,
+            separatorBuilder: (context, index) => const SizedBox(height: 10),
+            itemBuilder: (context, index) {
+              return CustomExpanded(
+                isExpanded: _isExpanded,
+                index: index,
+              );
+            },
+          )),
     );
   }
 }
