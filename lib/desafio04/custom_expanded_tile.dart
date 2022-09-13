@@ -44,7 +44,7 @@ class _CustomExpandedState extends State<CustomExpanded> {
             heightFactor: widget.isExpanded ? 0 : 1,
             curve: Curves.linearToEaseOut,
             child: SizedBox(
-              height: 200,
+              height: MediaQuery.of(context).size.width * 0.6,
               child: AnimatedCrossFade(
                 firstChild: Column(
                   children: const [

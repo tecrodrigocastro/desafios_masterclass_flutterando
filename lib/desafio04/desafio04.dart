@@ -18,17 +18,18 @@ class _Desafio04State extends State<Desafio04> {
         title: const Text('Desafio 04'),
       ),
       body: Padding(
-          padding: const EdgeInsets.all(10),
-          child: ListView.separated(
-            itemCount: 20,
-            separatorBuilder: (context, index) => const SizedBox(height: 10),
-            itemBuilder: (context, index) {
-              return CustomExpanded(
-                isExpanded: _isExpanded,
-                index: index,
-              );
-            },
-          )),
+        padding: const EdgeInsets.all(10),
+        child: ListView.separated(
+          itemCount: 40,
+          separatorBuilder: (context, index) => const SizedBox(height: 10),
+          itemBuilder: (context, index) {
+            return CustomExpanded(
+              isExpanded: _isExpanded,
+              index: index,
+            );
+          },
+        ),
+      ),
     );
   }
 }
